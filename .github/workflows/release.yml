@@ -1,0 +1,14 @@
+name: Test e2e on push merge
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Test e2e
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo 'test'
